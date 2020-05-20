@@ -1,0 +1,229 @@
+/* ALPHA */
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Baloo+Chettan+2:wght@500&family=Federant&family=Fredericka+the+Great&family=Josefin+Sans:wght@700&family=Kelly+Slab&family=Merienda:wght@400;700&family=Poiret+One&family=Raleway:wght@700&display=swap');
+
+/* BETA */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;200;300;400;500;600;700&display=swap');
+/*  
+________________________________________________________________
+ALPHA:    
+    font-family:  'Audiowide', cursive;
+    font-family:  'Baloo Chettan 2', cursive;
+    font-family: 'Federant', cursive;
+    font-family: 'Fredericka the Great', cursive;
+    font-family:  'Josefin Sans', sans-serif;
+    font-family:  'Kelly Slab', cursive;
+    font-family:  'Merienda', cursive;
+    font-family:  'Poiret One', cursive;
+    font-family:  'Raleway', sans-serif;
+
+BETA:
+    font-family: 'Montserrat Alternates', sans-serif; 
+        Weight Options: ('100', '200', '300', '400', '500',
+                        '600', '700', '800', '900')
+________________________________________________________________ */    
+
+
+
+
+:root{/*
+
+____________________________________________________     
+____________________( -FONTZ- )____________________ */    
+    --font-h1: 'Fredericka the Great', cursive;
+    --font-h2: 'Merienda', cursive;
+    --font-h3: 'Poiret One', cursive;
+    --font-h4: 'Kelly Slab', cursive;
+    --font-h5-and-h6: 'Raleway', sans-serif;
+    --font-btn: 'Montserrat Alternates', sans-serif; 
+    --font-hyper-link: 'Kelly Slab', cursive;
+/*________________________________________________
+-
+-
+-
+-
+
+____________________________________________________
+____________________( -FONTSIZE- )____________________ */    
+--fsz-h1:   64px;
+--fsz-h2:   52px;
+--fsz-h3:   44px;
+--fsz-h4:   36px;
+--fsz-h5:   28px;
+--fsz-h6:   20px;
+
+/*________________________________________________
+-
+-
+-
+-
+____________________________________________________     
+____________________( -COLORZ- )____________________ */    
+
+    --clr-canvas: #202020;
+    --clr-primary: #99FFFF;
+    --clr-trim: #FFFF99;
+    --clr-accent: #FF9999;
+
+    --clr-bg: #333;    
+    --clr-h1: #099;    
+    --clr-h2: #B00;    
+    --clr-h3: #ECB;    
+    --clr-h4: #FFF;    
+    --clr-h5: #AAA;    
+    --clr-h6: #AAA;    
+      
+    --clr-btnBg-sq: #046;
+    --clr-btnBrd-sq: #FED;
+    
+    --clr-btnBrd-cir: #900;
+    --clr-btnBg-cir: #000;
+}/*________________________________________________
+-
+-
+-
+-
+____________________________________________________     
+____________________( -SELECTOR: ByElement- )____________________ */    
+body
+{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-canvas);
+    font-family: 'Manrope', sans-serif;
+}
+
+
+
+
+h1 {
+    display: block;
+    margin: 8px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h1);
+    font-weight: 400;
+    font-variant: small-caps;
+    font-family: var(--font-h1);
+    color: var(--clr-h1);
+} 
+
+
+
+
+h2 {
+    display: block;
+    margin: 8px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h2);
+    font-weight: 400;
+    font-variant: small-caps;
+    font-family: var(--font-h2);
+    color: var(--clr-h2);
+}
+
+
+
+
+h3 {
+    display: block;
+    margin: 4px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h3);
+    font-weight: 400;
+    font-variant: small-caps;
+    font-family: var(--font-h3);
+    color: var(--clr-h3);
+}
+
+
+
+
+h4 {
+    display: block;
+    margin: 8px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h4);
+    font-weight: 400;
+    font-variant: small-caps;
+    font-family: var(--font-h4);
+    color: var(--clr-h4);
+}
+
+
+
+h5 {
+    display: block;
+    margin: 2px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h5);
+    font-weight: 700;
+    font-family: var(--font-h5-and-h6);
+    color: var(--clr-h5);
+}
+
+
+
+
+h6 {
+    display: block;
+    margin: 2px;
+    padding: 0;
+    text-decoration: none;
+    font-size: var(--fsz-h6);
+    font-weight: 700;
+    font-family: var(--font-h5-and-h6);
+    color: var(--clr-h6);
+}
+/*______________________________________________________
+-
+-
+-
+-
+_________________________________________________________     
+________________( -SELECTOR: ByClass- )________________ */    
+.btn_sqr
+{
+    display: block;
+    margin: 10px;
+    padding: 12px;
+    font-size: 22px;
+    font-family: var(font-btn);
+    color: var(--clr-btnBrd-sq);
+    border: 2px solid var(--clr-btnBrd-sq);
+    background-color: var(--clr-btnBg-sq);
+    border-radius: 12px;   
+}
+
+.btn_cir
+{
+    display: block;
+    width: 75px;
+    height: 75px;
+    margin: 10px;
+    padding: 12px;
+    font-size: 22px;
+    font-family: var(font-btn);
+    color: var(--clr-btnBrd-cir);
+    border: 2px solid var(--clr-btnBrd-cir);
+    background-color: var(--clr-btnBg-cir);
+    border-radius: 50px;
+}
+
+
+.hyper-link { 
+
+    /* ? ----====[ "Stand Alone Link" ]==== ----*/
+    display: inline-block;
+    margin: 4px;
+    padding: 20px;
+    text-decoration: none;
+    font-size: var(--fsz-hyper-link);
+    font-weight: 400;
+    font-family: var(--font-hyper-link);
+    color: var(--clr-hyper-link);
+};
